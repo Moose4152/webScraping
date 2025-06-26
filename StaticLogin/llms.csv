@@ -1,0 +1,11 @@
+Model,Origin,Company,Year,UseCases
+GPT-4,USA,OpenAI,2023,Chatbots; Code generation; Content creation; Research
+GPT-3,USA,OpenAI,2020,Chatbots; Text generation; Summarization
+Llama 2,USA,Meta,2023,Research; Open-source LLM; Chatbots
+PaLM 2,USA,Google,2023,Search; Chatbots; Multilingual tasks
+Gemini,USA,Google,2023,Multimodal AI; Search; Chatbots
+Claude 2,USA,Anthropic,2023,Safe AI; Chatbots; Content moderation
+ERNIE 3.0,China,Baidu,2021,Chinese NLP; Search; Chatbots
+BLOOM,International,BigScience,2022,Open-source LLM; Multilingual tasks
+Jurassic-2,Israel,AI21 Labs,2023,Text generation; Summarization; Chatbots
+MPT,USA,MosaicML,2023,Open-source LLM; Research; Chatbots 

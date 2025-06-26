@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Models & Companies</title>
+  <style>
+    body {
+      background: #f8fafc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .main-layout {
+      display: flex;
+      min-height: 100vh;
+    }
+    .side-panel {
+      width: 220px;
+      background: rgba(255,255,255,0.92);
+      box-shadow: 2px 0 12px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2.5rem 1.2rem 2.5rem 1.2rem;
+      z-index: 2;
+      position: relative;
+    }
+    .category-btn {
+      width: 100%;
+      background: #f0f2f5;
+      border: none;
+      border-radius: 6px;
+      padding: 1rem 1rem;
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+      color: #222;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      text-align: left;
+      display: block;
+      text-decoration: none;
+    }
+    .category-btn:hover, .category-btn.active {
+      background: #007bff;
+      color: #fff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.97);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 2.5rem 2rem 2rem 2rem;
+      position: relative;
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #carTableContainer {
+      width: 100%;
+      max-width: 1000px;
+      height: 500px;
+      overflow-y: auto;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 2.5rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.9rem 0.5rem;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    th {
+      background: #e9f2fb;
+      color: #333;
+      font-size: 1.15rem;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    @media (max-width: 900px) {
+      .main-layout {
+        flex-direction: column;
+      }
+      .side-panel {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 0.5rem;
+      }
+      .category-btn {
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+        flex: 1 1 0;
+        text-align: center;
+      }
+      .container {
+        padding: 1rem 0.2rem;
+      }
+    }
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 1.3rem;
+      }
+      table {
+        font-size: 1rem;
+      }
+      th, td {
+        padding: 0.5rem 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-layout">
+    <nav class="side-panel">
+      <a href="landing.html" class="category-btn">Geography</a>
+      <a href="cars.html" class="category-btn active">Cars</a>
+      <button class="category-btn">LLM Models</button>
+      <button class="category-btn">Trees</button>
+    </nav>
+    <div class="container">
+      <h1>Car Companies & Models</h1>
+      <div id="carTableContainer"></div>
+      <div id="loadingIndicator" style="text-align:center;color:#888;margin:1.5rem 0;display:none;">Loading more cars...</div>
+    </div>
+  </div>
+  <script type="module">
+    function parseCSV(csv) {
+      const lines = csv.trim().split('\n');
+      const headers = lines[0].split(',');
+      return lines.slice(1).map(line => {
+        const values = line.split(',');
+        const obj = {};
+        headers.forEach((h, i) => obj[h] = values[i]);
+        return obj;
+      });
+    }
+    async function loadCars() {
+      const res = await fetch('cars.csv');
+      const csv = await res.text();
+      return parseCSV(csv);
+    }
+    let allCars = [];
+    let loadedCount = 0;
+    const BATCH_SIZE = 10;
+    let loading = false;
+
+    function renderCarTable(cars, append = false) {
+      const container = document.getElementById('carTableContainer');
+      if (!append) {
+        container.innerHTML = '';
+      }
+      if (!cars.length && !append) {
+        container.innerHTML = '<div style="text-align:center;color:#888;">No car data available.</div>';
+        return;
+      }
+      let table = container.querySelector('table');
+      if (!table) {
+        table = document.createElement('table');
+        table.innerHTML = `
+          <tr>
+            <th>Company</th>
+            <th>Model</th>
+            <th>Cost (USD)</th>
+            <th>Mileage (mi/gal or mi/charge)</th>
+            <th>Type</th>
+          </tr>
+        `;
+        container.appendChild(table);
+      }
+      const rows = cars.map(car => `
+        <tr>
+          <td>${car.Company}</td>
+          <td>${car.Model}</td>
+          <td>$${Number(car.Cost).toLocaleString()}</td>
+          <td>${car.Mileage}</td>
+          <td>${car.Type}</td>
+        </tr>
+      `).join('');
+      table.insertAdjacentHTML('beforeend', rows);
+    }
+
+    async function loadAndRenderBatch() {
+      if (loading) return;
+      loading = true;
+      document.getElementById('loadingIndicator').style.display = 'block';
+      if (!allCars.length) {
+        allCars = await loadCars();
+      }
+      const nextBatch = allCars.slice(loadedCount, loadedCount + BATCH_SIZE);
+      renderCarTable(nextBatch, loadedCount > 0);
+      loadedCount += nextBatch.length;
+      loading = false;
+      document.getElementById('loadingIndicator').style.display = 'none';
+    }
+
+    function handleTableScroll() {
+      const container = document.getElementById('carTableContainer');
+      const scrollable = container.scrollHeight - container.scrollTop - container.clientHeight;
+      if (scrollable < 100 && loadedCount < allCars.length && !loading) {
+        loadAndRenderBatch();
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await loadAndRenderBatch();
+      const tableContainer = document.getElementById('carTableContainer');
+      tableContainer.addEventListener('scroll', handleTableScroll);
+    });
+  </script>
+</body>
+</html> 

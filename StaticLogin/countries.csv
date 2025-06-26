@@ -1,0 +1,137 @@
+Country,Population,GDP,Capital,Currency,FiscalDeficit,ArmyPersonnel,OlympicMedals
+USA,332M,25.5T,Washington D.C.,USD,5.8%,1390000,113
+China,1412M,18.0T,Beijing,CNY,3.6%,2035000,88
+India,1408M,3.5T,New Delhi,INR,6.4%,1450000,7
+Germany,83M,4.3T,Berlin,EUR,4.3%,184000,37
+Japan,125M,4.9T,Tokyo,JPY,7.1%,247000,58
+UK,67M,3.1T,London,GBP,4.3%,194000,65
+Brazil,214M,1.8T,Brasília,BRL,7.0%,334500,21
+France,65M,2.9T,Paris,EUR,5.5%,205000,33
+Italy,60M,2.1T,Rome,EUR,5.6%,170000,40
+Canada,38M,2.0T,Ottawa,CAD,4.7%,68000,24
+Australia,26M,1.6T,Canberra,AUD,4.2%,59000,46
+Russia,144M,1.7T,Moscow,RUB,4.4%,1000000,71
+South Korea,52M,1.8T,Seoul,KRW,3.7%,555000,20
+Spain,47M,1.4T,Madrid,EUR,6.8%,120000,17
+Mexico,126M,1.3T,Mexico City,MXN,3.9%,277000,4
+Indonesia,276M,1.2T,Jakarta,IDR,6.1%,400000,5
+Turkey,85M,815B,Ankara,TRY,5.2%,355200,13
+Netherlands,17M,1.0T,Amsterdam,EUR,2.3%,40000,36
+Saudi Arabia,35M,833B,Riyadh,SAR,4.5%,227000,2
+Switzerland,8.7M,824B,Bern,CHF,2.1%,36000,13
+Sweden,10.4M,635B,Stockholm,SEK,1.6%,23000,9
+Poland,38M,674B,Warsaw,PLN,3.5%,120000,14
+Belgium,11.5M,594B,Brussels,EUR,4.1%,38000,7
+Thailand,70M,546B,Bangkok,THB,4.7%,360000,1
+Argentina,45M,491B,Buenos Aires,ARS,7.5%,75000,3
+Norway,5.4M,482B,Oslo,NOK,2.5%,23000,8
+Austria,9M,480B,Vienna,EUR,3.2%,23000,7
+UAE,9.9M,421B,Abu Dhabi,AED,1.7%,63000,1
+Nigeria,213M,440B,Abuja,NGN,4.8%,223000,2
+South Africa,60M,419B,Pretoria,ZAR,6.2%,74000,3
+Egypt,104M,404B,Cairo,EGP,7.9%,438000,6
+Ireland,5M,504B,Dublin,EUR,0.5%,9000,4
+Denmark,5.8M,397B,Copenhagen,DKK,1.1%,20000,11
+Singapore,5.5M,397B,Singapore,SGD,0.1%,72000,12
+Malaysia,32M,372B,Kuala Lumpur,MYR,6.0%,110000,2
+Israel,9.3M,481B,Jerusalem,ILS,4.5%,170000,4
+Hong Kong,7.5M,368B,Hong Kong,HKD,0.2%,0,1
+Philippines,113M,394B,Manila,PHP,7.6%,125000,1
+Pakistan,225M,347B,Islamabad,PKR,7.1%,654000,0
+Chile,19M,317B,Santiago,CLP,2.8%,80000,2
+Finland,5.5M,297B,Helsinki,EUR,2.7%,12000,2
+Bangladesh,166M,416B,Dhaka,BDT,5.1%,157000,1
+Colombia,51M,314B,Bogotá,COP,7.8%,293200,5
+Czechia,10.7M,282B,Prague,CZK,5.9%,27000,11
+Romania,19M,284B,Bucharest,RON,7.2%,70000,4
+Portugal,10.3M,252B,Lisbon,EUR,2.8%,27000,2
+New Zealand,5.1M,250B,Wellington,NZD,2.2%,9000,20
+Hungary,9.6M,182B,Budapest,HUF,6.2%,37000,6
+Greece,10.3M,219B,Athens,EUR,7.4%,142000,2
+Qatar,2.9M,179B,Doha,QAR,2.5%,12000,2
+Kazakhstan,19M,197B,Astana,KZT,3.1%,39000,8
+Peru,33M,223B,Lima,PEN,4.5%,120000,4
+Ukraine,41M,200B,Kyiv,UAH,6.5%,250000,19
+Morocco,37M,142B,Rabat,MAD,6.1%,31000,1
+Slovakia,5.4M,117B,Bratislava,EUR,5.5%,17000,2
+Ecuador,18M,108B,Quito,USD,5.7%,40000,1
+Kuwait,4.3M,115B,Kuwait City,KWD,3.2%,15000,0
+Sri Lanka,22M,84B,Sri Jayawardenepura Kotte,LKR,11.1%,231000,1
+Kenya,54M,110B,Nairobi,KES,7.8%,24000,4
+Ethiopia,120M,111B,Addis Ababa,ETB,3.3%,162000,1
+Oman,5.2M,108B,Muscat,OMR,1.6%,42000,0
+Venezuela,28M,144B,Caracas,VEF,20.0%,123000,0
+Belarus,9.4M,68B,Minsk,BYN,3.7%,45000,7
+Uzbekistan,34M,80B,Tashkent,UZS,2.2%,48000,3
+Dominican Republic,11M,94B,Santo Domingo,DOP,3.1%,44000,5
+Myanmar,55M,65B,Naypyidaw,MMK,5.5%,406000,0
+Angola,35M,70B,Luanda,AOA,5.2%,107000,2
+Guatemala,18M,86B,Guatemala City,GTQ,2.8%,18000,1
+Luxembourg,0.6M,73B,Luxembourg City,EUR,0.5%,900,2
+Bulgaria,6.9M,84B,Sofia,BGN,3.0%,35000,3
+Croatia,4M,68B,Zagreb,HRK,2.9%,16000,8
+Panama,4.4M,68B,Panama City,PAB,3.7%,12000,1
+Costa Rica,5.2M,64B,San José,CRC,5.0%,16000,1
+Uruguay,3.5M,59B,Montevideo,UYU,4.8%,25000,1
+Slovenia,2.1M,62B,Ljubljana,EUR,3.1%,7500,3
+Lithuania,2.8M,66B,Vilnius,EUR,2.0%,18000,4
+Serbia,6.7M,63B,Belgrade,RSD,6.1%,28000,9
+Ivory Coast,27M,70B,Yamoussoukro,XOF,4.5%,22000,1
+Azerbaijan,10M,54B,Baku,AZN,2.7%,67000,7
+Tanzania,63M,67B,Dodoma,TZS,4.2%,27000,1
+Jordan,11M,48B,Amman,JOD,7.7%,100000,1
+Tunisia,12M,46B,Tunis,TND,7.5%,36000,2
+Ghana,32M,77B,Accra,GHS,9.2%,15000,1
+Paraguay,7.3M,39B,Asunción,PYG,3.2%,12000,1
+Lebanon,6.8M,23B,Beirut,LBP,10.0%,80000,0
+Libya,7M,40B,Tripoli,LYD,4.0%,30000,0
+Estonia,1.3M,36B,Tallinn,EUR,2.3%,7000,2
+Zambia,19M,23B,Lusaka,ZMW,10.2%,15000,1
+El Salvador,6.5M,28B,San Salvador,USD,4.7%,17000,3
+Cyprus,1.2M,27B,Nicosia,EUR,2.5%,12000,1
+Senegal,17M,27B,Dakar,XOF,5.0%,17000,1
+Honduras,10M,28B,Tegucigalpa,HNL,5.5%,15000,0
+Trinidad and Tobago,1.4M,23B,Port of Spain,TTD,5.1%,4000,2
+Bosnia and Herzegovina,3.2M,20B,Sarajevo,BAM,4.5%,10000,0
+Botswana,2.4M,19B,Gaborone,BWP,3.8%,9000,1
+Albania,2.9M,18B,Tirana,ALL,6.8%,8000,2
+Nicaragua,6.8M,14B,Managua,NIO,4.9%,12000,0
+Mali,21M,19B,Bamako,XOF,5.7%,8000,0
+Madagascar,29M,14B,Antananarivo,MGA,5.2%,13000,0
+Mongolia,3.3M,15B,Ulaanbaatar,MNT,5.1%,11000,2
+Armenia,2.9M,14B,Yerevan,AMD,3.5%,45000,4
+Jamaica,2.8M,16B,Kingston,JMD,4.6%,4000,4
+Moldova,2.6M,13B,Chisinau,MDL,6.2%,6000,0
+Namibia,2.5M,13B,Windhoek,NAD,4.1%,9000,0
+Gabon,2.3M,18B,Libreville,XAF,2.9%,5000,1
+Laos,7.4M,18B,Vientiane,LAK,5.5%,29000,0
+Georgia,3.7M,19B,Tbilisi,GEL,3.2%,37000,8
+Bahamas,0.4M,13B,Nassau,BSD,4.0%,1000,1
+Iceland,0.37M,25B,Reykjavik,ISK,1.0%,700,4
+Malta,0.52M,17B,Valletta,EUR,1.2%,2000,1
+Barbados,0.28M,5B,Bridgetown,BBD,4.5%,1000,1
+Montenegro,0.62M,5B,Podgorica,EUR,3.5%,2000,1
+Fiji,0.9M,5B,Suva,FJD,4.7%,3000,1
+Suriname,0.6M,4B,Paramaribo,SRD,7.0%,2000,2
+Guyana,0.8M,7B,Georgetown,GYD,6.0%,3000,1
+Swaziland,1.2M,4B,Mbabane,SZL,5.0%,3000,0
+Djibouti,1M,3B,Djibouti City,DJF,3.0%,10000,0
+Central African Republic,5M,2B,Bangui,XAF,7.5%,7000,0
+Equatorial Guinea,1.4M,12B,Malabo,XAF,2.0%,1000,1
+Mauritius,1.3M,12B,Port Louis,MUR,3.2%,2000,1
+Kosovo,1.8M,8B,Pristina,EUR,2.5%,2500,2
+Timor-Leste,1.3M,2B,Dili,USD,4.0%,1500,0
+Solomon Islands,0.7M,1.6B,Honiara,SBD,3.0%,2000,1
+Bhutan,0.8M,2.5B,Thimphu,BTN,4.5%,8000,2
+Belize,0.4M,2B,Belmopan,BZD,3.5%,1000,1
+Comoros,0.9M,1.2B,Moroni,KMF,2.0%,500,0
+Seychelles,0.1M,1.6B,Victoria,SCR,1.0%,500,1
+Tonga,0.1M,0.5B,Nuku'alofa,TOP,2.0%,500,1
+Samoa,0.2M,0.8B,Apia,WST,3.0%,500,1
+Vanuatu,0.3M,0.9B,Port Vila,VUV,2.5%,1000,1
+Saint Lucia,0.18M,2B,Castries,XCD,2.0%,500,1
+Grenada,0.11M,1.2B,St. George's,XCD,1.5%,500,1
+Saint Vincent and the Grenadines,0.11M,0.8B,Kingstown,XCD,1.0%,500,1
+Antigua and Barbuda,0.1M,1.6B,St. John's,XCD,1.0%,500,1
+Dominica,0.07M,0.5B,Roseau,XCD,1.0%,500,1
+Saint Kitts and Nevis,0.05M,1B,Basseterre,XCD,1.0%,500,1 
